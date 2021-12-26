@@ -1,0 +1,688 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* ......................................bates........................... */
+@font-face {
+  font-family: "RECURSIVE SANS";
+  src: url(../font/Recursive_VF_1.078.ttf) format("truetype");
+}
+@font-face {
+  font-family: "kobo";
+  src: url(../font/Bainsley_Bold.otf) format("truetype");
+}
+@font-face {
+  font-family: "courier";
+  src: url(../font/Courier-Prime.ttf) format("truetype");
+}
+@font-face {
+  font-family: "FuturaRenner-Light";
+  src: url(../font/FuturaRenner-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Avara";
+  src: url(../font/Avara.otf) format("truetype");
+}
+@font-face {
+  font-family: "margherita-regular";
+  src: url(../font/margherita-regular.otf) format("truetype");
+}
+/* .......................................bates........................................ */
+a {
+  text-decoration: none;
+  cursor: url(../Foto/cursor.cur), auto;
+}
+body {
+  background-color: rgb(55, 0, 92);
+}
+nav {
+  position: absolute;
+  padding: 0 0 0 0;
+  box-shadow: 0px 5px 3px -5px rgb(253, 253, 253);
+  width: 100%;
+  height: 60px;
+  background-color: rgb(55, 0, 92);
+  z-index: 999;
+  top: 0;
+}
+.kanan-atas {
+  float: right;
+  width: 475px;
+  height: 50px;
+}
+.kanan-atas ul li {
+  display: inline-block;
+  list-style: none;
+}
+.kanan-atas ul li a {
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: aliceblue;
+  margin: 0px 8px;
+  padding: 21px 7px;
+  text-align: center;
+  display: block;
+  top: 0;
+  transition: 0.5s;
+  font-family: "RECURSIVE SANS";
+  /* font-family: Courier; */
+}
+
+.kanan-atas ul li a:hover {
+  transform: scale(1.1);
+  background-color: rgba(253, 251, 255, 0.705);
+  padding: 18px 7px;
+  /* margin: 0px 10px; */
+  color: rgb(27, 27, 27);
+  border: 1px solid rgba(10, 10, 10, 0);
+}
+.kiri-atas {
+  float: left;
+  width: 380px;
+  height: 54px;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  filter: drop-shadow(2px 2px black);
+}
+/* .............................bates..................... */
+header {
+  width: auto;
+  height: 666px;
+}
+.kobo {
+  width: 100%;
+  height: 666px;
+  padding: 0;
+  top: 63px;
+  box-sizing: border-box;
+  position: relative;
+  /* background-color: darkviolet; */
+  background-image: linear-gradient(30deg, rgb(153, 0, 241), darkblue);
+  display: inline-block;
+}
+/* ...........................bgkobo............................... */
+.bk {
+  width: 1247px;
+  height: 170px;
+  border-right: 1px solid black;
+  display: block;
+  position: sticky;
+  top: 300px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  background-image: linear-gradient(30deg, darkviolet, darkblue);
+  box-shadow: inset 0 0 90px 5px rgb(48, 46, 46), 0 0 90px 5px rgb(26, 25, 25);
+  background-color: rgb(62, 0, 112);
+}
+.pitch {
+  width: 200px;
+  height: 140px;
+  border-right: solid 1px rgb(0, 0, 0);
+  position: relative;
+  top: 15px;
+}
+.pitch img {
+  display: block;
+  border-radius: 50%;
+  border: 5px solid black;
+  position: relative;
+  top: -15px;
+}
+.nama {
+  width: 500px;
+  height: 170px;
+  margin: -140px 0 0 270px;
+}
+.nama h2,
+h3 {
+  padding: 10px 0;
+  display: inline-block;
+  color: azure;
+}
+.nama h2 {
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: "kobo";
+}
+.nama h3 {
+  display: block;
+  font-family: "courier";
+}
+/* ...............................bates...................... */
+.batas {
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  margin-bottom: -10px;
+  padding-bottom: 0px;
+  background-color: rgb(67, 0, 94);
+  position: sticky;
+  display: inline-block;
+  border-top: solid 1px rgba(255, 255, 255, 0.445);
+}
+/* ...................................bates............................. */
+main {
+  width: 100%;
+  height: 2000px;
+  top: 0px;
+  box-sizing: border-box;
+  border-bottom: solid 15px rgba(255, 255, 255, 0.521);
+  background-color: rgb(132, 0, 255);
+  position: relative;
+}
+
+/* ...............................bates....................................... */
+
+.isi-main-kanan {
+  width: 390px;
+  height: 1600px;
+
+  background-color: rgba(233, 231, 231, 0.603);
+  position: relative;
+  display: inline-block;
+  top: 110px;
+  border-radius: 100px;
+
+  margin-top: 10px;
+  left: 920px;
+}
+.isi-main-kanan li {
+  background-color: rgb(214, 214, 214);
+  margin: 10px auto;
+  position: relative;
+  top: 170px;
+  list-style: none;
+}
+.isi-main-kanan p,
+.isi-main-kanan label {
+  height: 20px;
+  width: 359px;
+  position: absolute;
+}
+
+.isi-main-kanan p {
+  position: relative;
+  left: 30px;
+  font-weight: 100;
+  font-family: "margherita-regular";
+  letter-spacing: 3px;
+}
+.isi-main-kanan h5 {
+  display: inline-block;
+  height: 35px;
+  width: 340px;
+  padding: 5px;
+  top: 90px;
+  text-indent: 10px;
+  position: absolute;
+  background-color: rgb(31, 31, 31);
+  font-size: 26px;
+  color: aliceblue;
+  font-family: "Avara";
+}
+.motto h5 {
+  display: inline-block;
+  height: 35px;
+  width: 340px;
+  padding: 5px;
+  top: 400px;
+  position: absolute;
+  background-color: rgb(31, 31, 31);
+  font-size: 26px;
+  color: aliceblue;
+  font-family: "Avara";
+}
+.motto p {
+  width: 359px;
+  height: 60px;
+  position: relative;
+  top: 410px;
+  padding: 5px 10px;
+  margin-left: -30px;
+  margin-top: 5px;
+  background-color: rgb(214, 214, 214);
+  letter-spacing: 3px;
+  font-weight: 100;
+  font-family: "margherita-regular";
+}
+
+/* ........................................bates............................................ */
+
+.container-about {
+  width: auto;
+  height: 900px;
+  text-align: center;
+  top: 20px;
+  background-color: rgba(233, 231, 231, 0.603);
+  position: absolute;
+  left: 50px;
+  padding: 30px;
+  display: inline-block;
+  border-radius: 100px 100px 0 0;
+}
+.isi-about {
+  width: 800px;
+  height: 400px;
+  padding: 10px;
+  margin: 200px auto;
+  border-bottom: solid 1px black;
+  border-top: solid 1px black;
+  text-align: center;
+}
+
+.isi-about h4,
+.isi-about p {
+  text-align: center;
+  width: 700px;
+  height: 80px;
+  margin: 30px auto 10px;
+  color: black;
+}
+.isi-about h4 {
+  text-align: center;
+  width: 500px;
+  height: 90px;
+  box-shadow: 0px 5px 3px -5px rgba(0, 0, 5, 0.5);
+  line-height: 90px;
+  font-family: "Avara";
+  font-size: 30px;
+}
+.isi-about p {
+  text-align: center;
+  width: 600px;
+  height: 90px;
+  text-align: center;
+  top: 90px;
+  font-family: "margherita-regular";
+  font-size: 19px;
+  letter-spacing: 3px;
+}
+
+/* ..........................................bates about........................................ */
+.container-education {
+  width: auto;
+  height: 900px;
+  position: absolute;
+  background-color: rgba(233, 231, 231, 0.603);
+  border-radius: 0 0 100px 100px;
+
+  top: 920px;
+  padding: 30px;
+  left: 50px;
+}
+.isi-education {
+  width: 800px;
+  height: 400px;
+  margin: 200px auto;
+  border-bottom: solid 1px black;
+  border-top: solid 1px black;
+  text-align: left;
+}
+.isi-education h4 {
+  width: 400px;
+  height: 35px;
+  position: relative;
+  font-size: 26px;
+  padding: 7px;
+  top: -38px;
+  margin-top: 100px;
+  background-color: rgb(92, 92, 92);
+  color: aliceblue;
+  font-family: "Avara";
+  font-weight: 700;
+}
+.isi-education li {
+  list-style: circle;
+  width: 300px;
+  height: 20px;
+  padding: 0;
+  margin: 50px 20px;
+  box-shadow: 0px 5px 3px -5px rgba(0, 0, 5, 0.5);
+  position: relative;
+  left: 30px;
+}
+.isi-education b {
+  font-weight: 700;
+  font-size: 17px;
+  font-family: "Avara";
+}
+
+.isi-education p {
+  width: 500px;
+  height: 20px;
+  text-align: right;
+  display: inline-block;
+  font-style: italic;
+  font-family: "RECURSIVE SANS";
+}
+/* .....................................bates skill................................... */
+.container-skill {
+  width: 100%;
+  height: 800px;
+  background-image: linear-gradient(30deg, darkviolet, darkblue, darkviolet);
+  position: absolute;
+  top: 1990px;
+  border: solid 5px black;
+  border-radius: 0 0 80px 80px;
+}
+.isi-skill {
+  max-width: 700px;
+  height: 200px;
+  box-shadow: inset 0 0 90px 5px rgb(48, 46, 46), 0 0 90px 5px rgb(26, 25, 25);
+  position: relative;
+  top: 250px;
+  border-radius: -90px;
+  z-index: 10;
+  margin: auto;
+}
+.icon-html {
+  position: absolute;
+  top: 18px;
+  transition: all 1s;
+}
+.icon-css3 {
+  position: absolute;
+  left: 270px;
+  top: 16px;
+  transition: all 1s;
+}
+.icon-cisco {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  transition: all 1s;
+}
+.icon-html:hover {
+  top: 18px;
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 5px rgb(253, 174, 137));
+}
+.icon-css3:hover {
+  position: absolute;
+  top: 16px;
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 5px rgb(74, 183, 255));
+}
+.icon-cisco:hover {
+  position: absolute;
+  top: 60px;
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 5px rgb(164, 241, 255));
+}
+
+/* ..............................bates..................... */
+
+.container-contact {
+  width: 100%;
+  height: 800px;
+  background-color: rgb(80, 0, 126);
+  position: absolute;
+  top: 2900px;
+  border-top: solid 10px rgba(253, 253, 253, 0.452);
+  border-bottom: solid 5px rgba(253, 253, 253, 0.452);
+}
+.contact-form {
+  margin: 0;
+  display: block;
+  width: 800px;
+  height: 500px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.contact-form h1 {
+  margin-top: 0;
+  font-weight: 200;
+  color: aliceblue;
+  font-family: "RECURSIVE SANS";
+  font-size: 20px;
+}
+.judul {
+  border: 1px solid rgb(250, 250, 250);
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+.judul label {
+  display: block;
+  text-align: left;
+  color: rgb(255, 253, 253);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-family: "RECURSIVE SANS";
+}
+.judul input,
+.judul textarea {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+.tombol {
+  display: inline-block;
+  border-radius: 20px;
+  background: #4a8194;
+  padding: 14px 0;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 10px;
+  width: 200px;
+  transition: 200ms;
+  transform: scale(105%);
+  box-shadow: 0px 5px black;
+}
+
+.tombol:hover {
+  background-color: #60abc4;
+}
+.tombol:active {
+  box-shadow: 0px 0px black;
+  margin-top: 15px;
+}
+
+/*.............................. bates .....................................*/
+footer {
+  width: 1000px;
+  height: 100px;
+  top: 1800px;
+  position: relative;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  margin: auto;
+  border-top: solid 1px rgba(253, 253, 253, 0.452);
+}
+.social {
+  margin: 10px 100px;
+}
+.social img {
+  position: relative;
+  bottom: -3px;
+}
+.social p,
+.social li {
+  height: 10px;
+  display: inline;
+  font-size: 16px;
+  color: aliceblue;
+  position: relative;
+  font-family: "RECURSIVE SANS";
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.social li {
+  text-align: center;
+  padding: 3px 20px;
+  margin: 0 auto;
+}
+.social a {
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+.social a:hover {
+  text-decoration: underline;
+  color: rgb(71, 71, 71);
+}
+/* ...................................bates........................... */
+.button a {
+  background-color: rgba(125, 126, 126, 0.589);
+  position: fixed;
+  padding: 5px 15px;
+  margin: 0 60px;
+  right: 0;
+  font-weight: 900;
+  bottom: 40px;
+  border-radius: 40%;
+  font-size: 40px;
+  border: solid 1px rgba(0, 0, 0, 0.212);
+  transition: all 1s;
+}
+.button a:hover {
+  background-color: rgba(125, 126, 126, 0.63);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 5px 5px rgb(255, 255, 255));
+  border: solid 1px black;
+}
+/* ..................................bates...................................... */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      var isNS = navigator.appName == "Netscape" ? 1 : 0;
+      if (navigator.appName == "Netscape")
+        document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+      function mischandler() {
+        return false;
+      }
+      function mousehandler(e) {
+        var myevent = isNS ? e : event;
+        var eventbutton = isNS ? myevent.which : myevent.button;
+        if (eventbutton == 2 || eventbutton == 3) return false;
+      }
+      document.oncontextmenu = mischandler;
+      document.onmousedown = mousehandler;
+      document.onmouseup = mousehandler;
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="kiri-atas cf">
+      </div>
+      <div class="kanan-atas cf">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#contactme">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="kobo">
+        <div class="kobo2">
+        </div>
+        <div class="bk">
+          <div class="pitch">
+          <img src="Foto/IMG.jpg" alt="foto" />
+          </div>
+          <div class="nama">
+            <h2>Muhamad Ridho Fauzan</h2>
+            <h3>I`AM a Fron-End Developer | Web Designer</h3>
+          </div>
+        </div>
+    </header>
+    <div class="batas"></div>
+    <main> 
+<section  >
+  <div class="container-about" id="about">
+
+        <div class="isi-about">
+          <h4>About Me</h4>
+          <p>
+            Nama saya Muhamad Ridho Fauzan, umur saya 19 Tahun
+            saya adalah Mahasiswa di Universitas Pasundan Bandung, 
+            saya merupakan anak pertama dari 3 bersaudara, 
+            saya berasal dari Karawang atau lebih tepatnya berasal dari karawang barat  yaitu cikampek, 
+            saya merupakan seorang yang tertarik dengan dunia desain grafis, elektronika,dan  video grafi, 
+            dengan demikian saya senang mempelajari hal hal baru, saya mampu bekerja di 
+            bawah tekanan dan saya merupakan pribadi yang mandiri. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+          <div class="container-education" id="education">
+
+          <div class="isi-education">
+              <h4>Education</h4>
+                <ul>
+                  <li><b>SDN Balonggandu 2</b><p>(20XX - 20XX)</p></li>
+                  <li><b>SMP AL-Huda-Turalak Ciamis</b><p>(20XX - 20XX)</p></li>
+                  <li><b>SMK TI Muhammadiyah Cikampek</b><p>(20XX - 20XX)</p></li>
+                </ul>
+        </div>
+        </div>
+          <div class="isi-main-kanan">
+            <h5>Biodata</h5>
+            <ul>
+
+              <li><label for="">
+                <img src="Foto/gender.png" alt="gender">
+              </label>
+                <p>
+                Laki-Laki
+              </p>
+              </li>
+              <li>
+                <label for="status"><img src="Foto/stasus.png" alt="" /></label><p>Mahasiswa</p>
+              </li>
+              <li>
+                <label for="agama"><img src="Foto/agama.png" alt="" /></label><p>Islam</p>
+              </li>
+              <li>
+                <label for="tgl-lahir"><img src="Foto/tgl.png" alt="" /></label><p>30 agustus 20XX</p>
+              </li>
+            </ul>
+            <div class="motto">
+              <h5>Motto</h5>
+              <p>1.	Lihat ke belakang sebelum melangkah ke depan.</p>
+              <p>2.	Pengtahuan tidak hanya di dasarkan pada kebenaran saja, tetapi juga kesalahan.</p>
+            </div>
+          </div>
+        <div class="container-skill" id="skill">
+          <div class="isi-skill">
+            <div class="icon-html floating">
+              <img src="Foto/html.png" alt="Html5">
+            </div>
+              
+            <div class="icon-css3 floating">
+              <img src="Foto/css3.png" alt="CSS3">
+            </div>
+            <div class="icon-cisco floating"
+            ><img src="Foto/cisco.png" alt="">
+          </div>
+          </div>
+        </div>
+        <div class="container-contact" id="contactme">
+          <div class="contact-form" >
+            <h1>CONTACT ME</h1 >
+            <div class="judul">
+              <label>Nama Lengkap :</label>
+              <input
+                type="text"
+                name=""
+                value=""
+                placeholder="Tulis Nama disini..."
+              />
+            </div>
+            <div class="judul">
+              <label>Email :</label>
+              <input
+                type="email"
+                name=""
+                value=""
+                placeholder="Tulis Email disini..."
+              />
+            </div>
+            <div class="judul">
+              <label>Nomor HP :</label>
+              <input
+                type="text"
+                name=""
+                value=""
+                placeholder="Tulis Nomor HP disini..."
+              />
+            </div>
+            <div class="judul">
+              <label>Pesan :</label>
+              <textarea placeholder="Tulis Pesan Anda disini..."></textarea>
+            </div>
+            <a class="tombol">Kirim</a>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <div class="social">
+
+      <li><a href="#" target="_blank"><img src="Foto/facebook4.png" alt="FB"><p>Facebook</p></a></li>
+      <li><a href="#" target="_blank"><img src="Foto/instagram.png" alt="IG"><p>Instagram</p></a></li>
+      <li><a href="#" target="_blank"><img src="Foto/email2.png" alt="EMAIL"><p>Email</p></a></li>
+      <li><img src="Foto/wa4.png" alt="WA"><p>081291078132</p></li>
+      <li><label for="pembuat">©</label><p>M.Ridho Fauzan</p></li>
+    </div>
+    </footer>
+    <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+    <div class="button">
+      <a href="#">^</a>
+    </div>
+  </body>
+</html>
